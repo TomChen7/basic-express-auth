@@ -40,7 +40,6 @@ app.get("/secrets",isAuth,(req,res) => {
     res.json(secrets);
 });
 
-
 function isAuth(req,res,next) {
     const auth = req.headers.authorization;
     if(auth == 'password'){
